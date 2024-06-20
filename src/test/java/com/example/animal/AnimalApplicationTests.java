@@ -73,7 +73,7 @@ class AnimalApplicationTests {
 		List<PlaygroundAnimals> pga = playgroundAnimalsRepository.findByPlayground(pg);
 		for (PlaygroundAnimals pa : pga) {
 			String name = pa.getAnimal().getName();
-			int age = pa.getAnimal().getAge();
+			Integer age = pa.getAnimal().getAge();
 			String on = pa.getAnimal().getOwner().getName();
 			System.out.println(name + "/" + age + "/" + on);
 		}
